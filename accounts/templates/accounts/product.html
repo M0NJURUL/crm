@@ -15,8 +15,6 @@
                         <th>Category</th>
                         <th>Price</th>
                     </tr>
-
-                    
                         <!--<tr>
                             <td>BBQ Grill</td>
                             <td>Out Door</td>
@@ -34,8 +32,13 @@
                             <td>Out Door</td>
                             <td>30.0</td>
                         </tr>-->
-                    
-                    
+                        {% for i in products %}
+                            <tr>
+                                <td>{{i.name}}</td>
+                                <td>{{i.category}}</td>
+                                <td>{{i.price}}</td>
+                            </tr>
+                        {% endfor %}
                 </table>
             </div>
         </div>
