@@ -39,9 +39,15 @@
 					<th>Update</th>
 					<th>Remove</th>
 				</tr>
-				<tr>
-					<td></td>
-				</tr>
+				{% for i in orders %}
+					<tr>
+						<td>{{i.product}}</td>
+						<td>{{i.date_created}}</td>
+						<td>{{i.status}}</td>
+						<td><a href="">Update</a></td>
+						<td><a href="">Delete</a></td>
+					</tr>
+				{% endfor %}
 			</table>
 		</div>
 	</div>
