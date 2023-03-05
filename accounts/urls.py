@@ -12,3 +12,4 @@ urlpatterns = [
 ]
 
 #<a class="btn btn-primary  btn-sm btn-block" href="{% url 'create_order' %}">Create Order</a>
+#url routing is awesome
